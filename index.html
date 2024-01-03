@@ -16,6 +16,8 @@
   
 </head>
 <body>
+<div class="page">
+
   <header>
     <h1>Mentoria</h1>
     <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
@@ -25,21 +27,29 @@
     <fieldset>
       <div class="fieldset-wrapper">
 
-        <legend>Informações pessoais</legend>
+        <legend class="first-title">Informações pessoais</legend>
 
-          <div class="input-wrapper">
+        <div class="line"></div>
 
-            <label for="name">Nome</label>
-            <input 
-            type="text"
-            id="name"
-            required
-            />
+<div class="col-2">
 
-            <label for="">Sobrenome</label>
-            <input type="text" id="surname" required />
+  <div class="input-wrapper">
+    <label for="name">Nome</label>
+    <input 
+    type="text"
+    id="name"
+    required/>
+  </div>
 
-          </div>
+  <div class="input-wrapper">
+    <label for="name">Sobrenome</label>
+    <input 
+    type="text"
+    id="surname"
+    required/>
+  </div>
+
+</div>
 
           <div class="input-wrapper">
             <label for="email">Email <span>(digite um email válido)</span> </label>
@@ -53,7 +63,9 @@
 
         </div>
         <div class="fieldset-wrapper">
-          <legend>Informações do mentor</legend>
+          <legend class="second-title">Informações do mentor</legend>
+
+          <div class="line-2"></div>
 
           <div class="input-wrapper">
 
@@ -64,22 +76,27 @@
         </div>
 
         <div class="fieldset-wrapper">
-          <legend>Seus horários disponíveis</legend>
+          <legend class="second-title">Seus horários disponíveis</legend>
+          <div class="line-2"></div>
           <legend class="subtitle">Primeira mentoria</legend>
 
-          <div class="input-wrapper">
-            <label for="date">Data <span>(DD/MM/AAAA)</span> </label>
-            <input type="date" id="date">
-          </div>
+          <div class="col-3">
 
-          <div class="input-wrapper">
-            <label for="event-begin">Das</label>
-            <input type="time" id="event-begin" />
-          </div>
+            <div class="input-wrapper">
+              <label for="date">Data <span>(DD/MM/AAAA)</span> </label>
+              <input type="date" id="date">
+            </div>
+  
+            <div class="input-wrapper">
+              <label for="event-begin">Das</label>
+              <input type="time" id="event-begin" />
+            </div>
+  
+            <div class="input-wrapper">
+              <label for="event-end">Até</label>
+              <input type="time" id="event-end" />
+            </div>
 
-          <div class="input-wrapper">
-            <label for="event-end">Até</label>
-            <input type="time" id="event-end" />
           </div>
 
         </div>
@@ -87,6 +104,8 @@
         <div class="fieldset-wrapper">
           <legend class="subtitle">Segunda mentoria</legend>
 
+        <div class="col-3">
+
           <div class="input-wrapper">
             <label for="date">Data <span>(DD/MM/AAAA)</span> </label>
             <input type="date" id="date">
@@ -101,13 +120,17 @@
             <label for="event-end">Até</label>
             <input type="time" id="event-end" />
           </div>
+
+        </div>
           
         </div>
+      </fieldset>
+    </form>
+  
+  <footer>
+    <input class="button" type="submit" form="my-form" value="Salvar">
+  </footer>
 
-        
-
-      </div>
-    </fieldset>
-  </form>
+</div>
 </body>
 </html>
